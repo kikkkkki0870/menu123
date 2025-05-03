@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  .background {
+    background: url("https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_960_720.jpg") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+  }
+  
+  .center-block {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    width: 80%;
+    max-width: 1000px;
+    min-height: 90vh;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    overflow-y: auto;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e53935;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    margin-bottom: 30px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #e53935;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .gallery img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.8s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  }
+  
+  .gallery img:hover {
+    transform: rotate(360deg);
+  }
+  
+  .order-section {
+    text-align: center;
+    padding: 20px;
+    background: #ffe0b2;
+    border-radius: 10px;
+  }
